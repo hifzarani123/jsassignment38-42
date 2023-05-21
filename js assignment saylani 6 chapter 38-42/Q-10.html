@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function totalNotes(amount) {
+            var notesOf100 = Math.floor(amount / 100);
+            var notesOf50 = Math.floor((amount % 100) / 50);
+            var notesOf10 = Math.floor(((amount % 100) % 50) / 10);
+            document.write('You will have ' + notesOf100 + ' hundred note(s) ' + notesOf50 + ' fifty note(s) & ' + notesOf10 + ' ten notes.');
+        }
+        var amount = +prompt('Enter the amount to withdraw');
+        totalNotes(amount);
+    </script>
+</body>
+
+</html>

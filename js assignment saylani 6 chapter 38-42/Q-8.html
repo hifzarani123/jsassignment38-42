@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function convertToMeters(distInKm) {
+            var inMeters = distInKm * 1000;
+            document.write('<h3>Distance in meters: </h3>' + inMeters);
+            return inMeters;
+        }
+        function convertToFeet(distInKm) {
+            var inFeet = distInKm * 3281;
+            document.write('<h3>Distance in feets: </h3>' + inFeet);
+            return inFeet;
+        }
+        function convertToInches(distInKm) {
+            var inInches = distInKm * 39370;
+            document.write('<h3>Distance in inches: </h3>' + inInches);
+            return inInches;
+        }
+        function convertToCentimeters(distInKm) {
+            var inCentimeters = distInKm * 100000;
+            document.write('<h3>Distance in centimeters: </h3>' + inCentimeters);
+            return inCentimeters;
+        }
+        var distanceInKm = +prompt('Enter the distance between two cities in km');
+        document.write('<h3>Distance in km: <h3/>' + distanceInKm);
+
+        convertToMeters(distanceInKm);
+        convertToFeet(distanceInKm);
+        convertToInches(distanceInKm);
+        convertToCentimeters(distanceInKm);
+    </script>
+</body>
+
+</html>

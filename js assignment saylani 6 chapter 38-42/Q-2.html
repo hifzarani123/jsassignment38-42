@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function leapYear(year) {
+            if ((year % 100 === 0 && year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+                var result = year + " is a leap year";
+            }
+            else {
+                result = year + " is not a leap year";
+            }
+            return result;
+        }
+        var yearToCheck = +prompt("Enter any year in YYYY format to check whether it is leap or not")
+        var ans = leapYear(yearToCheck);
+        document.write(ans);
+    </script>
+</body>
+
+</html>

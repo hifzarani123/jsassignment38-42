@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function average(marks1, marks2, marks3) {
+            var avg = (marks1 + marks2 + marks3) / 3;
+            return avg.toFixed(2);
+        }
+        function percentage(marks1, marks2, marks3) {
+            var percent = (marks1 + marks2 + marks3) * 100 / 300;
+            return percent.toFixed(2);
+        }
+        function avg_percent(marks1, marks2, marks3) {
+            var avg = average(marks1, marks2, marks3);
+            var percent = percentage(marks1, marks2, marks3);
+            document.write('Average marks: ' + avg + '<br/>Percentage: ' + percent + '%');
+        }
+        var sub1 = +prompt('Enter marks obtained in subject 1');
+        var sub2 = +prompt('Enter marks obtained in subject 2');
+        var sub3 = +prompt('Enter marks obtained in subject 3');
+        avg_percent(sub1, sub2, sub3);
+    </script>
+</body>
+
+</html>

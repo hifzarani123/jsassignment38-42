@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function vowelsInSuccession(text) {
+            var occurence = 0;
+            for (var i = 0; i < text.length; i++) {
+                switch (text.slice(i, i + 2).toLowerCase()) {
+                    case 'aa':
+                        occurence++;
+                        break;
+                    case 'ae':
+                        occurence++;
+                        break;
+                    case 'ai':
+                        occurence++;
+                        break;
+                    case 'ao':
+                        occurence++;
+                        break;
+                    case 'au':
+                        occurence++;
+                        break;
+                    case 'ea':
+                        occurence++;
+                        break;
+                    case 'ee':
+                        occurence++;
+                        break;
+                    case 'ei':
+                        occurence++;
+                        break;
+                    case 'eo':
+                        occurence++;
+                        break;
+                    case 'eu':
+                        occurence++;
+                        break;
+                    case 'ia':
+                        occurence++;
+                        break;
+                    case 'ie':
+                        occurence++;
+                        break;
+                    case 'ii':
+                        occurence++;
+                        break;
+                    case 'io':
+                        occurence++;
+                        break;
+                    case 'iu':
+                        occurence++;
+                        break;
+                    case 'oa':
+                        occurence++;
+                        break;
+                    case 'oe':
+                        occurence++;
+                        break;
+                    case 'oi':
+                        occurence++;
+                        break;
+                    case 'oo':
+                        occurence++;
+                        break;
+                    case 'ou':
+                        occurence++;
+                        break;
+                    case 'ua':
+                        occurence++;
+                        break;
+                    case 'ue':
+                        occurence++;
+                        break;
+                    case 'ui':
+                        occurence++;
+                        break;
+                    case 'uo':
+                        occurence++;
+                        break;
+                    case 'uu':
+                        occurence++;
+                        break;
+                }
+            }
+            return occurence;
+        }
+        var text = prompt('Enter any sentence to count no. of occurences of two vowels in succession');
+        var occurences = vowelsInSuccession(text);
+        document.write('Occurence(s): ' + occurences);
+    </script>
+</body>
+
+</html>

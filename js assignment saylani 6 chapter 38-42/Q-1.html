@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function power(a, b) {
+            var ans = a;
+            for (var i = 1; i < b; i++) {
+                ans = ans * a;
+            }
+            return ans;
+        }
+        var a = +prompt('Enter any number to find its power');
+        var b = +prompt('Enter power to find');
+        var result = power(a, b);
+        document.write(a + '^' + b + ' = ' + result);
+    </script>
+</body>
+
+</html>
